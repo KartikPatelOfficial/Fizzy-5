@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "459113918994",
+    "firebase_url": "https://fizzy5-b140e.firebaseio.com",
+    "project_id": "fizzy5-b140e",
+    "storage_bucket": "fizzy5-b140e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459113918994:android:f632ce50cfcf49be",
+        "android_client_info": {
+          "package_name": "com.deucate.fizzy_5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459113918994-i2364qp8cf5ets5vpofi4b6ag6lucbk0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deucate.fizzy_5",
+            "certificate_hash": "001284c5faa23487511203cc71e471787a1a0908"
+          }
+        },
+        {
+          "client_id": "459113918994-03ost26fq5ctcmes5bql0ed4mgndsnaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhlPiqK-YvExVu52jburGDq-kpQRtCO88"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459113918994-03ost26fq5ctcmes5bql0ed4mgndsnaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
