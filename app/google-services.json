@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "459113918994-p8s06v48p9hkpl0c6a3dti0hv5ibodek.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deucate.fizzy_5",
+            "certificate_hash": "a554aa761230751f1fdbe67871c7b36efff44f47"
+          }
+        },
+        {
           "client_id": "459113918994-03ost26fq5ctcmes5bql0ed4mgndsnaa.apps.googleusercontent.com",
           "client_type": 3
         }
