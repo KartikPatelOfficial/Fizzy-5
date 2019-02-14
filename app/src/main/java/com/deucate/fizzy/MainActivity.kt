@@ -74,9 +74,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 startActivity(Intent(this, LoginActivity::class.java))
                 finish()
             }
-            R.id.nav_mart -> {
-
-            }
         }
 
         return true

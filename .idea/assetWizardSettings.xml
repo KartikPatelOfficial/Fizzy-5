@@ -35,8 +35,8 @@
                           <map>
                             <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="5eb1a4" />
-                            <entry key="outputName" value="ic_home" />
-                            <entry key="sourceFile" value="C:\Users\karti\Downloads\Fizzy_Assets\home.svg" />
+                            <entry key="outputName" value="ic_liked" />
+                            <entry key="sourceFile" value="C:\Users\karti\Downloads\Fizzy_Assets\liked.svg" />
                           </map>
                         </option>
                       </PersistentState>
