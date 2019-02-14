@@ -75,7 +75,6 @@ class LoginActivity : AppCompatActivity() {
 
         auth.signInWithCredential(credential)
                 .addOnCompleteListener(this) { task ->
-
                     if (task.isSuccessful) {
                         startMainActivity()
                     } else {
