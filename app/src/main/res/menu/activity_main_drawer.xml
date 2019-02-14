@@ -6,24 +6,19 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_order"
-            android:icon="@drawable/ic_radio_button_checked_black_24dp"
             android:title="@string/my_orders" />
         <item
             android:id="@+id/nav_mart"
-            android:icon="@drawable/mart"
             android:title="@string/my_mart" />
         <item
             android:id="@+id/nav_location"
-            android:icon="@drawable/location"
             android:title="@string/user_location" />
         <item
             android:id="@+id/nav_help"
-            android:icon="@drawable/help"
             android:title="@string/help" />
 
         <item
             android:id="@+id/nav_contact"
-            android:icon="@drawable/contact_up"
             android:title="@string/contact_us" />
 
     </group>

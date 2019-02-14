@@ -12,4 +12,6 @@
     <string name="user_location">User Location</string>
     <string name="my_mart">My Mart</string>
     <string name="my_orders">My Orders</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
 </resources>
