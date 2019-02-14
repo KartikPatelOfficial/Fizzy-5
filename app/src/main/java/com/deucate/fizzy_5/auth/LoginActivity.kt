@@ -1,4 +1,4 @@
-package com.deucate.fizzy.auth
+package com.deucate.fizzy_5.auth
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -6,8 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import android.widget.Toast
-import com.deucate.fizzy.MainActivity
-import com.deucate.fizzy.R
+import com.deucate.fizzy_5.MainActivity
+import com.deucate.fizzy_5.R
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions

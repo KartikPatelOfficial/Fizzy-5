@@ -1,4 +1,4 @@
-package com.deucate.fizzy.auth
+package com.deucate.fizzy_5.auth
 
 import java.net.URI
 

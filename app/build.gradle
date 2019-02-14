@@ -7,7 +7,7 @@ apply plugin: 'com.google.gms.google-services'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.deucate.fizzy"
+        applicationId "com.deucate.fizzy_5"
         minSdkVersion 22
         targetSdkVersion 28
         versionCode 1

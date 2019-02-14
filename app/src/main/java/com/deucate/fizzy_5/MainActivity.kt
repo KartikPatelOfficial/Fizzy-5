@@ -1,4 +1,4 @@
-package com.deucate.fizzy
+package com.deucate.fizzy_5
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,7 +12,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import com.deucate.fizzy.auth.LoginActivity
+import com.deucate.fizzy_5.auth.LoginActivity
+import com.deucate.fizzy_5.home.HomeFragment
 import com.google.firebase.auth.FirebaseAuth
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_main.*
@@ -92,7 +93,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when (item.itemId) {
             R.id.nav_home -> {
                 viewModel.actionbarTitle.value = "Home"
-
+                viewModel.currentFragment.value = HomeFragment()
             }
             R.id.nav_order -> {
                 viewModel.actionbarTitle.value = "Order"

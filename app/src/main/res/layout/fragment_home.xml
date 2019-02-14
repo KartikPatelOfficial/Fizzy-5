@@ -7,11 +7,13 @@
     tools:context=".home.HomeFragment">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="8dp"
         android:id="@+id/homeRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
     <com.airbnb.lottie.LottieAnimationView
+        android:visibility="invisible"
         android:id="@+id/homeNotFoundAnimation"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

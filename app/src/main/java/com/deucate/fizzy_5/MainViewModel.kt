@@ -1,4 +1,4 @@
-package com.deucate.fizzy
+package com.deucate.fizzy_5
 
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.MutableLiveData

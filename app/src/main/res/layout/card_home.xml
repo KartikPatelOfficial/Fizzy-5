@@ -58,7 +58,7 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginEnd="8dp"
-                android:src="@drawable/like_animation" />
+                android:src="@drawable/ic_like" />
 
         </LinearLayout>
 
