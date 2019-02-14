@@ -55,14 +55,6 @@
             android:textColor="@color/text_icon"
             tools:ignore="HardcodedText" />
 
-        <TextView
-            android:id="@+id/nav_phoneTv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="phone"
-            android:textColor="@color/text_icon"
-            tools:ignore="HardcodedText" />
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
