@@ -12,7 +12,7 @@ import java.util.*
 class HomeAdapter(private val data: ArrayList<Mart>, private val listener: OnHomeCardClickListener) : RecyclerView.Adapter<HomeViewHolder>() {
 
     interface OnHomeCardClickListener {
-        fun onClickCard(position: Int)
+        fun onClickCard(position: Int, id: String)
         fun onClickLike(position: Int, viewHolder: HomeViewHolder)
     }
 
@@ -31,7 +31,7 @@ class HomeAdapter(private val data: ArrayList<Mart>, private val listener: OnHom
         holder.martTitle.text = mart.name
 
         holder.cardView.setOnClickListener {
-            listener.onClickCard(position)
+            listener.onClickCard(position,mart.id)
         }
 
         holder.like.setOnClickListener {
