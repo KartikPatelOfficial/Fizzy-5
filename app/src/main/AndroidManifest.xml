@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ProductsActivity"></activity>
+        <activity android:name=".home.category.ProductDetailActivity"/>
+        <activity android:name=".home.category.ProductsActivity" />
         <activity android:name=".home.category.CategoryActivity" />
         <activity
             android:name=".auth.LoginActivity"

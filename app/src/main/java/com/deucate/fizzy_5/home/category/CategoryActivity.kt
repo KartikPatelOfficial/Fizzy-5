@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.deucate.fizzy_5.ProductsActivity
 import com.deucate.fizzy_5.R
 import com.deucate.fizzy_5.model.Category
 import com.google.firebase.firestore.FirebaseFirestore
