@@ -26,4 +26,20 @@
     <string name="products">Products</string>
 
     <string name="loremp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="name">Name</string>
+    <string name="address_line_1">Address Line 1</string>
+    <string name="address_line_2">Address Line 2</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="user">Users</string>
+    <string name="myCart">MyCart</string>
+    <string name="total">Total :</string>
+    <string name="checkout">Checkout</string>
+    <string name="order">Order</string>
+
+    <string-array name="payment_method">
+        <item>Credit card</item>
+        <item>Debit card</item>
+        <item>Wallet</item>
+        <item>Pay on delivery</item>
+    </string-array>
 </resources>

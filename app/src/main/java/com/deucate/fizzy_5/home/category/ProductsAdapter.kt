@@ -1,9 +1,10 @@
-package com.deucate.fizzy_5
+package com.deucate.fizzy_5.home.category
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.deucate.fizzy_5.R
 import com.deucate.fizzy_5.model.Product
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.card_product.view.*

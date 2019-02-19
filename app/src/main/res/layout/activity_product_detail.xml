@@ -58,7 +58,7 @@
 
     <Button
         android:id="@+id/productBuyBtn"
-        android:text="Buy Now"
+        android:text="Add to cart"
         android:textColor="@color/text_icon"
         android:background="@color/primaryTextColor"
         android:layout_width="match_parent"

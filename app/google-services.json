@@ -23,6 +23,22 @@
           }
         },
         {
+          "client_id": "459113918994-gm3iqobdf5qroc8ium5or7qhqp5m7ab2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deucate.fizzy_5",
+            "certificate_hash": "47938b70486cbffacda9cdb93e4673feca0adf90"
+          }
+        },
+        {
+          "client_id": "459113918994-rop4sni0gm9ouepb77o5rh6ekod6eo40.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deucate.fizzy_5",
+            "certificate_hash": "d255c17d0104964809c980ac0bf68fc9882f6fc6"
+          }
+        },
+        {
           "client_id": "459113918994-03ost26fq5ctcmes5bql0ed4mgndsnaa.apps.googleusercontent.com",
           "client_type": 3
         }

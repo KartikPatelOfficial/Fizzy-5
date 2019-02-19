@@ -11,5 +11,6 @@ data class Product(
         val isStock: Boolean,
         val discountedPrice: Long?,
         val description: String,
-        val image: String
-):Serializable
+        val image: String,
+        var quantity: Int = 0
+) : Serializable

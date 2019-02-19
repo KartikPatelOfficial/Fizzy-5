@@ -13,6 +13,7 @@ import android.widget.TextView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.deucate.fizzy_5.auth.LoginActivity
+import com.deucate.fizzy_5.cart.CartActivity
 import com.deucate.fizzy_5.home.HomeFragment
 import com.google.firebase.auth.FirebaseAuth
 import com.squareup.picasso.Picasso
@@ -60,6 +61,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 }
             }
         })
+
+        viewModel.currentFragment.value = HomeFragment()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -74,6 +77,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 auth.signOut()
                 startActivity(Intent(this, LoginActivity::class.java))
                 finish()
+            }
+            R.id.myCart -> {
+                startActivity(Intent(this, CartActivity::class.java))
             }
         }
 

@@ -1,9 +1,6 @@
 package com.deucate.fizzy_5.home.category
 
 import android.annotation.SuppressLint
-import android.annotation.TargetApi
-import android.app.ActionBar
-import android.graphics.Typeface
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,20 +10,28 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.annotation.RequiresApi
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.deucate.fizzy_5.R
+import com.deucate.fizzy_5.Utils
 import com.deucate.fizzy_5.model.Product
-import com.google.android.material.resources.TextAppearance
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_product_detail.*
 
 class ProductDetailActivity : AppCompatActivity() {
 
     private lateinit var product: Product
+    private val auth = FirebaseAuth.getInstance()
+
+    private lateinit var utils: Utils
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_product_detail)
+
+        utils = Utils(this)
 
         product = intent.getSerializableExtra("Product") as Product
 
@@ -36,41 +41,31 @@ class ProductDetailActivity : AppCompatActivity() {
 
         productRating.rating = (product.rating / 2).toFloat()
 
-        productPrice.addView(getPriceLayout(product.price, product.hasDiscount, product.discountedPrice))
+        productPrice.addView(utils.getPriceLayout(product.price, product.hasDiscount, product.discountedPrice))
+
+        productBuyBtn.setOnClickListener {
+            /**AlertDialog.Builder(this)
+            .setTitle("Please enter your detail")
+            .setView(LayoutInflater.from(this).inflate(R.layout.alert_get_information, null))
+            .setPositiveButton("Next") { _, _ ->
+
+            }.show()**/
+
+            addToCart(product)
+        }
 
         Log.d("----->", product.name)
     }
 
-    @SuppressLint("PrivateResource")
-    private fun getPriceLayout(price: Long, hasDiscount: Boolean, discountedPrice: Long?): View {
-        val priceTextView = TextView(this)
-        priceTextView.text = price.toString()
-
-        if (hasDiscount) {
-            val linearLayout = LinearLayout(this)
-            linearLayout.orientation = LinearLayout.VERTICAL
-
-            val text = SpannableString(price.toString())
-            priceTextView.text = text
-
-            val discountedText = SpannableString(discountedPrice.toString())
-            val discountedPriceTextView = TextView(this)
-            discountedPriceTextView.text = discountedText
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                priceTextView.setTextAppearance(R.style.TextAppearance_MaterialComponents_Overline)
-                discountedPriceTextView.setTextAppearance(R.style.Base_TextAppearance_MaterialComponents_Subtitle2)
+    private fun addToCart(product: Product) {
+        FirebaseFirestore.getInstance().collection(getString(R.string.user)).document(auth.uid!!).collection(getString(R.string.myCart)).add(product).addOnCompleteListener {
+            if (it.isSuccessful) {
+                Toast.makeText(this, "Product added to cart", Toast.LENGTH_SHORT).show()
+            } else {
+                AlertDialog.Builder(this).setTitle("Ohh no!!!").setMessage("Please submit this error to fix them as soon as possible : ${it.exception!!.localizedMessage}")
             }
-
-            linearLayout.addView(priceTextView, ViewGroup.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT))
-            linearLayout.addView(discountedPriceTextView, ViewGroup.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT))
-            return linearLayout
-        } else {
-
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                priceTextView.setTextAppearance(R.style.Base_TextAppearance_MaterialComponents_Subtitle2)
-            }
-
-            return priceTextView
         }
     }
+
+
 }
