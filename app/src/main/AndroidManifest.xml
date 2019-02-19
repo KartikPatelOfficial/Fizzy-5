@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".order.OrderActivity"></activity>
+        <activity android:name=".order.OrderFragment"></activity>
         <activity android:name=".checkout.CheckoutActivity" />
         <activity android:name=".cart.CartActivity" />
         <activity android:name=".home.category.ProductDetailActivity" />

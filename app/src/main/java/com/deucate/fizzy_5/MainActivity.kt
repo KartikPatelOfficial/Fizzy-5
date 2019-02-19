@@ -15,6 +15,7 @@ import androidx.lifecycle.ViewModelProviders
 import com.deucate.fizzy_5.auth.LoginActivity
 import com.deucate.fizzy_5.cart.CartActivity
 import com.deucate.fizzy_5.home.HomeFragment
+import com.deucate.fizzy_5.order.OrderFragment
 import com.google.firebase.auth.FirebaseAuth
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_main.*
@@ -102,6 +103,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 viewModel.currentFragment.value = HomeFragment()
             }
             R.id.nav_order -> {
+                viewModel.currentFragment.value = OrderFragment()
                 viewModel.actionbarTitle.value = "Order"
 
             }
