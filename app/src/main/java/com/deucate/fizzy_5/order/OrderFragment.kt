@@ -41,7 +41,7 @@ class OrderFragment : Fragment() {
                 view.orderDetailMartName.text = order.martName
                 view.orderDetailStatus.text = adapter.getStatus(order.status)
 
-                val qrgEncoder = QRGEncoder(auth.uid!!, null, QRGContents.Type.TEXT, 200).encodeAsBitmap()
+                val qrgEncoder = QRGEncoder(order.id, null, QRGContents.Type.TEXT, 200).encodeAsBitmap()
                 view.orderDetailQRImage.setImageBitmap(qrgEncoder)
 
                 AlertDialog.Builder(context!!).setTitle("Your order").setView(view).setPositiveButton("Ok") { _, _ -> }.show()

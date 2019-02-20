@@ -35,6 +35,7 @@
     <string name="total">Total :</string>
     <string name="checkout">Checkout</string>
     <string name="order">Order</string>
+    <string name="pick_up">Pick Up</string>
 
     <string-array name="payment_method">
         <item>Credit card</item>
